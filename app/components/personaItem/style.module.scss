@@ -1,0 +1,96 @@
+.personaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--border-color-upload);
+  position: relative;
+  width: calc(18.7vw - 2px);
+  height: 300px;
+  transition: border 0.3s ease;
+  cursor: pointer;
+  background-color: #f0f0f0;
+
+  &.loading {
+    border-color: var(--active-color);
+    background-color: var(--active-color);
+    opacity: 0.5;
+  }
+
+  &:hover {
+    border-color: var(--active-color);
+  }
+
+  .char {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--active-color);
+    top: -15px;
+    left: -15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .options {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .share {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--active-color);
+  }
+
+  img {
+    height: 100%;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  transform: translate(-50%, -50%);
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--active-color);
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
