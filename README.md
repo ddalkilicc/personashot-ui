@@ -1,8 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PersonaShot AI Image Generator
+
+PersonaShot, yapay zeka destekli görsel üretim aracıdır. Yüklediğiniz görselleri AI teknolojisi ile farklı stillerde yeniden oluşturmanızı sağlar.
+
+## Özellikler
+
+- Görsel yükleme ve önizleme
+- AI destekli görsel üretimi
+- Farklı stil seçenekleri
+- Özelleştirilebilir görsel boyutları
+- Çoklu format desteği (JPG, PNG, WebP, GIF)
+- Gerçek zamanlı görsel önizleme
+- Üretilen görselleri paylaşma imkanı
+
+## Teknolojiler
+
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [SCSS Modules](https://sass-lang.com/)
+
+## Başlangıç
 
 ## Getting Started
 
-First, run the development server:
+1. Repoyu klonlayın:
 
 ```bash
 npm run dev
